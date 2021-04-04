@@ -8,6 +8,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/profile" />
+        android:textAppearance="?textAppearanceHeadline4"
+        android:gravity="center"
+        android:text="@string/develop_yourself_here" />
 
 </FrameLayout>
