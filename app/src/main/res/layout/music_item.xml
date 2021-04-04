@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:paddingTop="10dp"
+    android:layout_height="80dp">
+
+    <amin.rz3.musicplayeronline.view.MusicPlayerOnlineImageView
+        android:id="@+id/img_music"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="11dp"
+        android:textAppearance="?textAppearanceBody1"
+        app:layout_constraintStart_toEndOf="@+id/img_music"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Turn Down For What" />
+
+    <TextView
+        android:id="@+id/singer_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textAppearance="?textAppearanceBody2"
+        app:layout_constraintStart_toEndOf="@+id/img_music"
+        app:layout_constraintTop_toBottomOf="@+id/title_music"
+        tools:text="Dj Snake" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/singer_music"
+        app:layout_constraintStart_toEndOf="@+id/singer_music"
+        app:layout_constraintTop_toBottomOf="@+id/title_music"
+        app:srcCompat="@drawable/ic_iconly_light_time_circle" />
+
+    <TextView
+        android:id="@+id/time_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:textAppearance="?textAppearanceBody2"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        tools:text="08:12" />
+</androidx.constraintlayout.widget.ConstraintLayout>
