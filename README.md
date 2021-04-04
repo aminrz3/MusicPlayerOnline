@@ -13,4 +13,4 @@ MVVM Sample Project;)
 
 - [Retrofit](./retrofit)
 
-- [Timber](./timber)
+- [Timber](./JakeWharton/timber)
